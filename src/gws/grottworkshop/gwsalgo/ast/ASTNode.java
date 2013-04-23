@@ -1,4 +1,4 @@
-package gws.grottworkshop.ast;
+package gws.grottworkshop.gwsalgo.ast;
 
 import java.util.ArrayList;
 import java.util.List;

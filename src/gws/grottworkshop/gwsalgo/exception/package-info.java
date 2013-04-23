@@ -5,4 +5,4 @@
  * @author fredgrott
  *
  */
-package gws.grottworkshop.ast;
+package gws.grottworkshop.gwsalgo.exception;
