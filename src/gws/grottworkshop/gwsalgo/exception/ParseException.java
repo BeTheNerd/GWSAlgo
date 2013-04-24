@@ -4,6 +4,7 @@ package gws.grottworkshop.gwsalgo.exception;
 /**
  * The Class ParseException.
  */
+@SuppressWarnings("serial")
 public class ParseException extends RuntimeException {
 
 	  /**

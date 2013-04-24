@@ -12,7 +12,8 @@ import gws.grottworkshop.gwsalgo.parser.Parser;
 public class Simplifier {
 	  
   	/** The simplifiers. */
-  	private static ExpressionSimplifier[] simplifiers = {
+  	@SuppressWarnings("rawtypes")
+	private static ExpressionSimplifier[] simplifiers = {
 	      new AdditiveExpressionSimplifier()
 	  };
 
@@ -56,12 +57,14 @@ public class Simplifier {
   	 * @param element the element
   	 * @return the simplify result
   	 */
-  	private SimplifyResult simplify(ASTNode element) {
+  	@SuppressWarnings("rawtypes")
+	private SimplifyResult simplify(ASTNode element) {
 	    boolean simplified = false;
 
 	    for (ExpressionSimplifier simplifier : simplifiers) {
 	      if (element.getClass().isAssignableFrom(simplifier.getApplicableElement())) {
-	        SimplifyResult result = simplifier.simplify(element);
+	        @SuppressWarnings("unchecked")
+			SimplifyResult result = simplifier.simplify(element);
 	        if (result.simplified) {
 	          simplified = true;
 	          if (result.newElement != null) {

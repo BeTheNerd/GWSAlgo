@@ -97,7 +97,8 @@ public class Parser {
     }
   }
 
-  private ASTNode parseParensAndUnaryExpression() {
+  @SuppressWarnings("incomplete-switch")
+private ASTNode parseParensAndUnaryExpression() {
     TokenType tokenType = currentToken.getType();
     switch (tokenType) {
       case IDENTIFIER: {

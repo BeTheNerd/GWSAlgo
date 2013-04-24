@@ -4,6 +4,7 @@ package gws.grottworkshop.gwsalgo.exception;
 /**
  * The Class SyntaxException.
  */
+@SuppressWarnings("serial")
 public class SyntaxException extends ParseException {
 
 	  /**

@@ -4,6 +4,7 @@ package gws.grottworkshop.gwsalgo.exception;
 /**
  * The Class TransformException.
  */
+@SuppressWarnings("serial")
 public class TransformException extends ParseException{
 	  
   	/**
